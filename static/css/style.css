@@ -1,0 +1,248 @@
+body {
+    background-color: rgb(20, 0, 30);
+}
+
+.navbar-nav .nav-link:hover {
+    font-weight: bold;
+    color: #4fffb0;
+}
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.navbar-dark {
+    background-color: rgb(18, 1, 46);
+}
+
+.circular-image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image {
+    width: 120%;
+    height: auto;
+    display: block;
+}
+
+.title {
+    color: #4fffb0;
+}
+
+.name {
+    color: #fff;
+}
+
+.social_links {
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    border-radius: block;
+    border: 2px solid #ccc;
+}
+
+/* My Tech Stack Styling */
+.tech-stack {
+    margin-top: 40px;
+}
+
+.tech-stack h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4fffb0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tech-stack .stack-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tech-stack .stack-icons img {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+}
+
+.tech-stack .stack-icons img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* General container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Heading styles */
+.projects-heading {
+    color: #007bff;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Styling for each project card */
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;  /* Added more space between cards */
+}
+
+/* Hover effect on project cards */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Project titles */
+.project-title {
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Image styling for project */
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px;  /* Increase the size of the images */
+    object-fit: cover; /* Ensure images maintain their aspect ratio */
+}
+
+/* Margin and padding for better spacing */
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.my-4 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive design: 3 columns on large screens, 2 on medium, 1 on small */
+@media (min-width: 1200px) {
+    .col-md-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Styles for the certificates */
+.certificate-card {
+    background-color: #f8f9fa; /* Light gray background */
+    border: 2px solid #6c757d; /* Subtle border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px); /* Slightly lift on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.certificate-title {
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    color: #007bff; /* Blue color for the titles */
+    font-weight: bold;
+}
+
+.certificate-description {
+    font-family: 'Arial', sans-serif;
+    color: #6c757d; /* Slightly muted gray text */
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.jumbotron {
+    background-color: #ffffff; /* White background for the jumbotron */
+    border-radius: 5px; /* Rounded corners for the jumbotron */
+    margin-bottom: 30px;
+    padding: 40px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.jumbotron h1 {
+    font-size: 2.5rem;
+    font-family: 'Arial', sans-serif;
+    color: #343a40; /* Darker text */
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .certificate-card {
+        padding: 15px;
+    }
+
+    .certificate-title {
+        font-size: 1.8rem;
+    }
+
+    .certificate-description {
+        font-size: 1rem;
+    }
+}
+
+.form-container{
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+}
