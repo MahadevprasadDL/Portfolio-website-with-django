@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content1 %}
+<div class="row my-5">
+  <div class="col-12 d-flex justify-content-center align-items-center">
+    <div class="circular-image-container">
+      <img class="circular-image" src="{% static 'images/me.jpg' %}" alt="Mahadevprasad DL">
+    </div>
+  </div>
+  
+  <div class="col-12 text-center mt-4">
+    <h4 class="title">Hello, My Name is</h4>
+    <div class="name">
+      <h1>Mahadevprasad DL</h1>
+      <h4>
+        Full Stack Web Developer | Contributor at GSSoC'24 <br>
+        DSA in Python | Django | Python Programming | MySQL | PHP
+      </h4>
+    </div>
+  </div>
+
+  <div class="col-12 text-center mt-3">
+    <div class="d-flex justify-content-center align-items-center">
+      <a href="https://www.linkedin.com/in/mahadevprasad-d-l-889624290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="ms-3">
+        <img src="{% static 'images/link.png' %}" alt="LinkedIn Profile" width="50" height="50" class="social_links">
+      </a>
+      <a href="https://github.com/MahadevprasadDL" target="_blank" class="ms-3">
+        <img src="{% static 'images/git.jpg' %}" alt="GitHub Profile" width="50" height="50" class="social_links">
+      </a>
+      <a href="https://www.instagram.com/girish_giri.18/" target="_blank" class="ms-3">
+        <img src="{% static 'images/insta.jpg' %}" alt="Instagram Profile" width="50" height="50" class="social_links">
+      </a>
+      <a href="https://leetcode.com/u/mahadevaprasad_dl/" target="_blank" class="ms-3">
+        <img src="{% static 'images/leet.png' %}" alt="LeetCode Profile" width="50" height="50" class="social_links">
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock content1 %}
